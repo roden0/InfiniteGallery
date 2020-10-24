@@ -1,0 +1,37 @@
+.image{
+    &__container {
+        padding: 3%;
+        position: relative;
+        width:40%;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    &__picture {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__overlay {
+        border-radius: 3%;
+        transition: all .3s;
+        color: white;
+        font-family: sans-serif;
+        line-height: 1.5;
+        text-align: center;
+        transform: translateY(150%);
+        background-color: rgba(100, 100, 100, .2);
+        position: absolute;
+        padding: 3%;
+        height: 60%;
+        width: 60%;
+        left: 15%;
+        top: 15%;
+        cursor: pointer;
+    }
+
+    &__container:hover &__overlay {
+        background-color: rgba(100, 100, 100, .9);
+        transform: translateY(0);
+    }
+}

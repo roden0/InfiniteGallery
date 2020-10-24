@@ -1,0 +1,31 @@
+@import 'styles/reset';
+
+body {
+  margin: 0;
+  padding: 1rem;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  max-width: 80%;
+  margin: 2% auto;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.single-photo {
+  max-width: 300px;
+  align-self: auto;
+  margin: 1% 2px;
+  flex-grow: 1;
+  vertical-align: middle;
+}
